@@ -24,6 +24,7 @@
   color: white;
 }
 
+
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +36,104 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+header {
+  padding: 10px;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  gap: 20px; /* Add space between items */
+}
+
+header h1 {
+  margin: 0; /* Remove default margin */
+}
+
+/* Search Container Styling */
+.search-container {
+  display: flex;
+  justify-content: center; /* Horizontally center the input */
+  margin: 20px 0; /* Add space above and below */
+}
+
+#search-box {
+  width: 60%; /* Set a responsive width */
+  max-width: 400px; /* Limit max width */
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+.sidebar {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 10px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+}
+
+
+/* Dashboard Container */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+/* Dashboard Header */
+header {
+  padding: 10px;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Dashboard Content: Sidebar + Products */
+.dashboard-content {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 20%; /* Adjust as needed */
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-right: 1px solid #ddd;
+}
+
+/* Products Section */
+.products {
+  flex: 1; /* Take remaining space */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 15px;
+  padding: 10px;
+}
+
+/* Product Card */
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
